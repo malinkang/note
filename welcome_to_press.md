@@ -5,4 +5,4 @@ Press is currently only available on Android as a proof-of-concept, but the plan
 
 https://github.com/saket/press
 
-Kudos to [Bear](https://bear.app) for being the inspiration behind Press.
+Kudos to [Bear](https://bear.app) for being the inspiration behind Press
