@@ -1,3 +1,6 @@
 [submodule "docs/leetcode"]
 	path = docs/leetcode
 	url = git@github.com:malinkang/Leetcode.git
+[submodule "docs/android"]
+	path = docs/android
+	url = git@github.com:malinkang/AndroidNote.git
