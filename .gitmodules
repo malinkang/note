@@ -1,0 +1,3 @@
+[submodule "docs/leetcode"]
+	path = docs/leetcode
+	url = git@github.com:malinkang/Leetcode.git

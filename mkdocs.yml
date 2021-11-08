@@ -1,0 +1,40 @@
+site_name: Note
+theme:
+  name: material
+  palette:
+    primary: 'red'
+    accent: 'red'
+  features:
+    - navigation.tabs
+nav:
+  - LeetCode:
+    - 排序（1）: 
+      - 冒泡排序: leetcode/sort/bubble-sort.md
+    - 树（17）: 
+      - 107.二叉树的层次遍历 II: leetcode/tree/107.binary-tree-level-order-traversal-ii.md
+      - 145. 二叉树的后序遍历: leetcode/tree/145.binary-tree-postorder-traversal.md
+      - 剑指 Offer 32 - I.从上到下打印二叉树: leetcode/tree/32-i.cong-shang-dao-xia-da-yin-er-cha-shu-lcof.md
+      - 144. 二叉树的前序遍历: leetcode/tree/144.binary-tree-preorder-traversal.md
+      - 105.从前序与中序遍历序列构造二叉树: leetcode/tree/105.construct-binary-tree-from-preorder-and-inorder-traversal.md
+      - 104.二叉树的最大深度: leetcode/tree/104.maximum-depth-of-binary-tree.md
+      - 199. 二叉树的右视图: leetcode/tree/199.binary-tree-right-side-view.md
+      - 226. 翻转二叉树: leetcode/tree/226.invert-binary-tree.md
+      - 剑指 Offer 54. 二叉搜索树的第k大节点: leetcode/tree/54.er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof.md
+      - 236. 二叉树的最近公共祖先: leetcode/tree/236.lowest-common-ancestor-of-a-binary-tree.md
+      - 94. 二叉树的中序遍历: leetcode/tree/94.binary-tree-inorder-traversal.md
+      - 589. N叉树的前序遍历: leetcode/tree/589.n-ary-tree-preorder-traversal.md
+      - 543. 二叉树的直径: leetcode/tree/543.diameter-of-binary-tree.md
+      - 617.合并二叉树: leetcode/tree/617.merge-two-binary-trees.md
+      - 102.二叉树的层序遍历: leetcode/tree/102.binary-tree-level-order-traversal.md
+      - 101. 对称二叉树: leetcode/tree/101.symmetric-tree.md
+      - 剑指 Offer 33.二叉搜索树的后序遍历序列: leetcode/tree/33.er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof.md
+      - 114.二叉树展开为链表: leetcode/tree/114.flatten-binary-tree-to-linked-list.md
+      - 剑指 Offer 32 - II.从上到下打印二叉树 II: leetcode/tree/32-ii.cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof.md
+      - 剑指 Offer 26.树的子结构: leetcode/tree/26.shu-de-zi-jie-gou-lcof.md
+      - 35.搜索插入位置: leetcode/binary-search/35.search-insert-position.md
+      - 744. 寻找比目标字母大的最小字母: leetcode/binary-search/744.find-smallest-letter-greater-than-target.md
+      - 33.搜索旋转排序数组: leetcode/binary-search/33.search-in-rotated-sorted-array.md
+      - 剑指 Offer 11. 旋转数组的最小数字: leetcode/binary-search/11.xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof.md
+      - 53 - I. 在排序数组中查找数字 I: leetcode/binary-search/53-i.zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof.md
+      - 剑指 Offer 53 - II. 0～n-1中缺失的数字: leetcode/binary-search/53-ii.que-shi-de-shu-zi-lcof.md
+  
