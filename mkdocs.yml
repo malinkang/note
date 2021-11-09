@@ -1,4 +1,6 @@
-site_name: Wiki
+site_name: note
+site_description: 学习笔记
+site_author: malinkang
 theme:
   name: material
   palette:
