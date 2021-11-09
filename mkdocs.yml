@@ -1,4 +1,4 @@
-site_name: Note
+site_name: Wiki
 theme:
   name: material
   palette:
@@ -127,4 +127,14 @@ nav:
       - 836.矩形重叠: leetcode/math/836.rectangle-overlap.md
       - 1103.分糖果 II: leetcode/math/1103.distribute-candies-to-people.md
   - Android:
-    
+    - components:
+      - Activity: android/components/activities.md
+  - Python:
+    - 第2章 变量和简单数据类型: python/di-2-zhang-bian-liang-he-jian-dan-shu-ju-lei-xing.md
+  - Java:
+    - Java编程思想:
+      - 第16章数组: java/thinking-in-java/arrays.md
+  - Kotlin:
+    - 第2章 kotlin基础: kotlin/di-2-zhang-kotlin-ji-chu.md
+  - JavaScript:
+    - 第2章 在HTML中使用JavaScript: javascript/chapter-2-javascript-in-html.md
