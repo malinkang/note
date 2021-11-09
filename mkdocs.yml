@@ -172,7 +172,16 @@ nav:
     - components:
       - Activity: android/components/activities.md
   - Python:
-    - 第2章 变量和简单数据类型: python/di-2-zhang-bian-liang-he-jian-dan-shu-ju-lei-xing.md
+    - 第2章　变量和简单数据类型: python/di-2-zhang-bian-liang-he-jian-dan-shu-ju-lei-xing.md
+    - 第3章　列表简介: python/di-3-zhang-lie-biao-jian-jie.md
+    - 第4章　操作列表: python/di-4-zhang-cao-zuo-lie-biao.md
+    - 第5章　if语句: python/di-5-zhang-if-yu-ju.md
+    - 第6章　字典: python/di-6-zhang-zi-dian.md
+    - 第7章　用户输入和while循环: python/di-7-zhang-yong-hu-shu-ru-he-while-xun-huan.md
+    - 第8章　函数: python/di-8-zhang-han-shu.md
+    - 第9章　类: python/di-9-zhang-lei.md
+    - 第10章　文件和异常: python/di-10-zhang-wen-jian-he-yi-chang.md
+    - 第15章 生成数据: python/di-15-zhang-sheng-cheng-shu-ju.md
   - Java:
     - Java编程思想:
       - Java8介绍: java/java8.md
@@ -219,5 +228,33 @@ nav:
       - 线程安全与锁优化: java/jvm/thread-safe-and-lock-optimization.md
   - Kotlin:
     - 第2章 kotlin基础: kotlin/di-2-zhang-kotlin-ji-chu.md
+    - 第3章 函数的定义与调用: kotlin/di-3-zhang-han-shu-de-ding-yi-yu-tiao-yong.md
+    - 第4章 类对象和接口: kotlin/chapter4-classes-objects-and-interfaces.md
+    - 高阶函数与 lambda 表达式: kotlin/di-5-zhang-lambda-bian-cheng.md
+    - 第6章 Kotlin的类型系统: kotlin/di-6-zhang-kotlin-de-lei-xing-xi-tong.md
+    - 第7章 运算符重载及其他约定: kotlin/di-7-zhang-yun-suan-fu-zhong-zai-ji-qi-ta-yue-ding.md
+    - 高阶函数: kotlin/higher-order-functions.md
+    - 第11章 DSL构建: kotlin/di-11-zhang-dsl-gou-jian.md
+    - 协程: kotlin/xie-cheng.md
   - JavaScript:
     - 第2章 在HTML中使用JavaScript: javascript/chapter-2-javascript-in-html.md
+  - C++:
+    - 第1章 开始: cpp/di-1-zhang-kai-shi.md
+    - 第2章 变量和基本类型: cpp/di-2-zhang-bian-liang-he-ji-ben-lei-xing.md
+    - 第3章 字符串、向量和数组: cpp/di-3-zhang-zi-fu-chuan-xiang-liang-he-shu-zu.md
+    - 第4章 表达式: cpp/di-4-zhang-biao-da-shi.md
+    - 第5章 语句: cpp/di-5-zhang-yu-ju.md
+    - 第6章 函数: cpp/di-6-zhang-han-shu.md
+    - 第7章 类: cpp/di-7-zhang-lei.md
+    - 第8章 IO库: cpp/di-8-zhang-io-ku.md
+    - 第9章 顺序容器: cpp/di-9-zhang-shun-xu-rong-qi.md
+    - 第10章 泛型算法: cpp/di-10-zhang-fan-xing-suan-fa.md
+    - 第11章 关联容器: cpp/di-11-zhang-guan-lian-rong-qi.md
+    - 第12章 动态内存: cpp/di-12-zhang-dong-tai-nei-cun.md
+    - 第13章 拷贝控制: cpp/di-13-zhang-kao-bei-kong-zhi.md
+    - 第14章 操作重载与类型转换: cpp/di-14-zhang-cao-zuo-zhong-zai-yu-lei-xing-zhuan-huan.md
+    - 第15章 面向对象程序设计: cpp/di-15-zhang-mian-xiang-dui-xiang-cheng-xu-she-ji.md
+    - 第16章 模版与泛型编程: cpp/di-16-zhang-mo-ban-yu-fan-xing-bian-cheng.md
+    - 第17章 标准库特殊设施: cpp/di-17-zhang-biao-zhun-ku-te-shu-she-shi.md
+    - 第18章 用于大型程序的工具: cpp/di-18-zhang-yong-yu-da-xing-cheng-xu-de-gong-ju.md
+    - 第19章 特殊工具与技术: cpp/di-19-zhang-te-shu-gong-ju-yu-ji-shu.md

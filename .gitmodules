@@ -16,3 +16,6 @@
 [submodule "docs/javascript"]
 	path = docs/javascript
 	url = git@github.com:malinkang/JavaScriptNote.git
+[submodule "docs/cpp"]
+	path = docs/cpp
+	url = git@github.com:malinkang/CppNote.git
