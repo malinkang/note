@@ -1,14 +1,33 @@
 site_name: note
 site_description: 学习笔记
+site_url: https://malinkang.cn/note
 site_author: malinkang
+## Repository
+repo_name: malinkang/note
+repo_url: https://github.com/malinkang/note
 
+# Copyright
+copyright: Copyright &copy; 2013 - 2021 malinkang
 theme:
   name: material
-  palette:
-    primary: 'red'
-    accent: 'red'
   features:
+    - content.code.annotate-code
     - navigation.tabs
+    - navigation.top
+    
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
 
 extra:
   social:
@@ -24,6 +43,11 @@ extra:
       link: https://weibo.com/malinkang
     - icon: fontawesome/brands/medium
       link: https://medium.com/malinkang
+markdown_extensions:
+  #代码高亮
+   - pymdownx.highlight
+   - pymdownx.superfences
+   - pymdownx.keys
 nav:
   - LeetCode:
     - 排序（1）:
@@ -151,7 +175,48 @@ nav:
     - 第2章 变量和简单数据类型: python/di-2-zhang-bian-liang-he-jian-dan-shu-ju-lei-xing.md
   - Java:
     - Java编程思想:
+      - Java8介绍: java/java8.md
+      - 第2章一切都是对象: java/thinking-in-java/everything-is-an-object.md
+      - 第3章操作符: java/thinking-in-java/operators.md
+      - 第4章控制流程: java/thinking-in-java/controlling-execution.md
+      - 第5章初始化与清理: java/thinking-in-java/initialization-and-cleanup.md
+      - 第6章访问权限控制: java/thinking-in-java/access-control.md
+      - 第7章复用类: java/thinking-in-java/reusing-classes.md
+      - 第8章多态: java/thinking-in-java/polymorphism.md
+      - 第9章接口: java/thinking-in-java/interfaces.md
+      - 第10章内部类: java/thinking-in-java/inner-classes.md
+      - 第11章持有对象: java/thinking-in-java/holding-your-objects.md
+      - 第12章通过异常处理错误: java/thinking-in-java/error-handling-with-exceptions.md
+      - 第13章字符串: java/thinking-in-java/strings.md
+      - 第14章类型信息: java/thinking-in-java/type-information.md
+      - 第15章泛型: java/thinking-in-java/generics.md
       - 第16章数组: java/thinking-in-java/arrays.md
+      - 第17章容器深入研究: java/thinking-in-java/containers-in-depth.md
+      - 第18章I/O系统: java/thinking-in-java/i-o.md
+      - 第19章枚举类型: java/thinking-in-java/enumerated-types.md
+      - 第20章注解: java/thinking-in-java/annotations.md
+      - 第21章并发: java/thinking-in-java/concurrency.md
+    - Effective Java: 
+      - 第2章创建和销毁对象: java/effective-java/creating-and-destroying-objects.md
+      - 第3章对于所有对象都通用的方法: java/effective-java/methods-common-to-all-objects.md
+      - 第4章类和接口: java/effective-java/classes-and-interfaces.md
+      - 第5章泛型: java/effective-java/generics.md
+      - 第6章枚举和注解: java/effective-java/enums-and-annotations.md
+      - 第7章lambda表达式和流: java/effective-java/lambdas-and-streams.md
+      - 第8章方法: java/effective-java/methods.md
+      - 第9章通用程序设计: java/effective-java/general-programming.md
+      - 第10章异常: java/effective-java/exceptions.md
+      - 第11章并发: java/effective-java/concurrency.md
+      - 第12章序列化: java/effective-java/serialization.md
+    - JVM:
+      - Java内存区域与内存溢出: java/jvm/runtime-data-areas.md
+      - 垃圾收集器与内存分配策略: java/jvm/garbage-collection.md
+      - 类文件结构: java/jvm/class-file-structure.md
+      - 虚拟机类加载机制: java/jvm/classloader.md
+      - 虚拟机字节码执行引擎: java/jvm/execution-engin.md
+      - 编译期优化: java/jvm/compilation-optimization.md
+      - Java内存模型与线程: java/jvm/java-memory-model-and-thread.md
+      - 线程安全与锁优化: java/jvm/thread-safe-and-lock-optimization.md
   - Kotlin:
     - 第2章 kotlin基础: kotlin/di-2-zhang-kotlin-ji-chu.md
   - JavaScript:
