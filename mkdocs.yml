@@ -15,6 +15,7 @@ theme:
     - content.code.annotate-code
     - navigation.tabs
     - navigation.top
+
   palette:
     - scheme: default
       primary: indigo
@@ -86,6 +87,10 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.13.3/dist/mermaid.min.js
 nav:
   - Android:  
     - 开源库:
