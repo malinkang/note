@@ -9,8 +9,16 @@ repo_url: https://github.com/malinkang/note
 # Copyright
 copyright: Copyright &copy; 2013 - 2021 malinkang
 theme:
-  name: material
+  name: null
+  custom_dir: !ENV [THEME_DIR, "material"]
   logo: https://avatars.githubusercontent.com/u/3365208?v=4
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  
   features:
     - content.code.annotate-code
     - navigation.tabs
@@ -18,8 +26,8 @@ theme:
 
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: light-blue
+      accent: light-blue
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -29,6 +37,8 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+  icon:
+    logo: logo
   font:
     text: Roboto
     code: Roboto Mono
@@ -47,6 +57,7 @@ extra:
       link: https://weibo.com/malinkang
     - icon: fontawesome/brands/medium
       link: https://medium.com/malinkang
+  disqus: 'OI-wiki'
 
 # Extensions   
 markdown_extensions:
