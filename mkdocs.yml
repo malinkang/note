@@ -108,6 +108,8 @@ nav:
       - EventBus: android/thirdparty/eventbus.md
       - Okio概览: android/thirdparty/okio-overview.md
       - Okio菜谱: android/thirdparty/okio-recipes.md
+      - Okio源码分析: android/thirdparty/okio.md
+      - OkHttp源码分析: android/thirdparty/okhttp.md
   - LeetCode:
     - 排序（1）:
       - 冒泡排序: leetcode/sort/bubble-sort.md
