@@ -119,6 +119,7 @@ nav:
         - Glide请求分析: android/thirdparty/glide-request.md
         - Glide缓存分析: android/thirdparty/glide-cache.md
         - Glide线程池: android/thirdparty/glide-threadpool.md
+      - LeakCanary源码分析: android/thirdparty/leakcanary-source-analysis.md
   - LeetCode:
     - 排序（1）:
       - 冒泡排序: leetcode/sort/bubble-sort.md
