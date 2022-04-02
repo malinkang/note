@@ -101,226 +101,226 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - Android:  
-    - 开源库:
-      - EventBus: android/thirdparty/eventbus.md
-      - Okio概览: android/thirdparty/okio-overview.md
-      - Okio菜谱: android/thirdparty/okio-recipes.md
-      - Okio源码分析: android/thirdparty/okio.md
-      - OkHttp文档:
-        - OkHttp概览: android/thirdparty/okhttp-shi-yong.md
-        - OkHttp缓存: android/thirdparty/okhttp-cache.md
-        - OkHttp拦截器: android/thirdparty/okhttp-interceptor.md
-      - OkHttp源码分析: android/thirdparty/okhttp.md
-      - Glide源码分析:
-        - Glide流程分析: android/thirdparty/glide.md
-        - Glide请求分析: android/thirdparty/glide-request.md
-        - Glide缓存分析: android/thirdparty/glide-cache.md
-        - Glide线程池: android/thirdparty/glide-threadpool.md
-      - LeakCanary源码分析: android/thirdparty/leakcanary-source-analysis.md
-  - LeetCode:
-    - 排序（1）:
-      - 冒泡排序: leetcode/sort/bubble-sort.md
-    - 数组（16）:
-      - 1.两数之和: leetcode/array/1.two-sum.md
-      - 11.盛最多水的容器: leetcode/array/11.container-with-most-water.md
-      - 15. 三数之和: leetcode/array/15.3sum.md
-      - 26.删除排序数组中的重复项: leetcode/array/26.remove-duplicates-from-sorted-array.md
-      - 27.移除元素: leetcode/array/27.remove-element.md
-      - 31.下一个排列: leetcode/array/31.next-permutation.md
-      - 48.旋转图像: leetcode/array/48.rotate-image.md
-      - 66.加一: leetcode/array/66.plus-one.md
-      - 88.合并两个有序数组: leetcode/array/88.merge-sorted-array.md
-      - 118.杨辉三角: leetcode/array/118.pascals-triangle.md
-      - 119.杨辉三角 II: leetcode/array/119.pascals-triangle-ii.md
-      - 169.多数元素: leetcode/array/169.majority-element.md
-      - 283.移动零: leetcode/array/283.move-zeroes.md
-      - 349. 两个数组的交集: leetcode/array/349.intersection-of-two-arrays.md
-      - 448.找到所有数组中消失的数字: leetcode/array/448.find-all-numbers-disappeared-in-an-array.md
-      - 830. 较大分组的位置: leetcode/array/830.positions-of-large-groups.md
-      - 剑指 Offer 03.数组中重复的数字: leetcode/array/03.shu-zu-zhong-zhong-fu-de-shu-zi-lcof.md
-      - 剑指 Offer 21.调整数组顺序使奇数位于偶数前面: leetcode/array/jian-zhi-offer-21.-tiao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian.md
-      - 剑指 Offer 29.顺时针打印矩阵: leetcode/array/jian-zhi-offer-29.-shun-shi-zhen-da-yin-ju-zhen.md
-    - 队列&栈（4）:
-      - 剑指 Offer 09.用两个栈实现队列: leetcode/queue-stack/9.yong-liang-ge-zhan-shi-xian-dui-lie-lcof.md
-      - 20.有效的括号: leetcode/queue-stack/20.valid-parentheses.md
-      - 155.最小栈: leetcode/queue-stack/155.min-stack.md
-      - 232.用栈实现队列: leetcode/queue-stack/232.implement-queue-using-stacks.md
-      - 844. 比较含退格的字符串: leetcode/queue-stack/844.backspace-string-compare.md
-    - 链表（21）:
-      - 2.两数相加: leetcode/linked-list/2.add-two-numbers.md
-      - 19.删除链表的倒数第N个节点: leetcode/linked-list/19.remove-nth-node-from-end-of-list.md
-      - 21. 合并两个有序链表: leetcode/linked-list/21.merge-two-sorted-lists.md
-      - 23.合并K个升序链表: leetcode/linked-list/23.merge-k-sorted-lists.md
-      - 24.两两交换链表中的节点: leetcode/linked-list/24.swap-nodes-in-pairs.md
-      - 61.旋转链表: leetcode/linked-list/61.rotate-list.md
-      - 83.删除排序链表中的重复元素: leetcode/linked-list/83.remove-duplicates-from-sorted-list.md
-      - 82.删除排序链表中的重复元素II: leetcode/linked-list/82.remove-duplicates-from-sorted-list-ii.md
-      - 86.分隔链表: leetcode/linked-list/86.partition-list.md
-      - 92. 反转链表II: leetcode/linked-list/92.reverse-linked-list-ii.md
-      - 141.环形链表: leetcode/linked-list/141.linked-list-cycle.md
-      - 142.环形链表 II: leetcode/linked-list/142.linked-list-cycle-ii.md
-      - 143. 重排链表: leetcode/linked-list/143.reorder-list.md
-      - 147. 对链表进行插入排序: leetcode/linked-list/147.insertion-sort-list.md
-      - 160. 相交链表: leetcode/linked-list/160.intersection-of-two-linked-lists.md
-      - 206.反转链表: leetcode/linked-list/206.reverse-linked-list.md
-      - 203.移除链表元素: leetcode/linked-list/203.remove-linked-list-elements.md
-      - 234.回文链表: leetcode/linked-list/234.palindrome-linked-list.md
-      - 237.删除链表中的节点: leetcode/linked-list/237.delete-node-in-a-linked-list.md
-      - 445. 两数相加 II: leetcode/linked-list/445.add-two-numbers-ii.md
-      - 1721.交换链表中的节点: leetcode/linked-list/1721.swapping-nodes-in-a-linked-list.md
-      - 剑指 Offer 06.从尾到头打印链表: leetcode/linked-list/06.cong-wei-dao-tou-da-yin-lian-biao.md
-      - 剑指 Offer 18.删除链表的节点: leetcode/linked-list/18.shan-chu-lian-biao-de-jie-dian-lcof.md
-      - 剑指 Offer 22.链表中倒数第k个节点: leetcode/linked-list/22.lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof.md
-      - 剑指 Offer 35.复杂链表的复制: leetcode/linked-list/35.fu-za-lian-biao-de-fu-zhi-lcof.md
-    - 树（22）:
-      - 144. 二叉树的前序遍历: leetcode/tree/144.binary-tree-preorder-traversal.md
-      - 94. 二叉树的中序遍历: leetcode/tree/94.binary-tree-inorder-traversal.md
-      - 145. 二叉树的后序遍历: leetcode/tree/145.binary-tree-postorder-traversal.md
-      - 589. N叉树的前序遍历: leetcode/tree/589.n-ary-tree-preorder-traversal.md
-      - 101. 对称二叉树: leetcode/tree/101.symmetric-tree.md
-      - 102.二叉树的层序遍历: leetcode/tree/102.binary-tree-level-order-traversal.md
-      - 104.二叉树的最大深度: leetcode/tree/104.maximum-depth-of-binary-tree.md
-      - 105.从前序与中序遍历序列构造二叉树: leetcode/tree/105.construct-binary-tree-from-preorder-and-inorder-traversal.md
-      - 107.二叉树的层次遍历 II: leetcode/tree/107.binary-tree-level-order-traversal-ii.md
-      - 110. 平衡二叉树: leetcode/tree/110.balanced-binary-tree.md
-      - 114.二叉树展开为链表: leetcode/tree/114.flatten-binary-tree-to-linked-list.md
-      - 199.二叉树的右视图: leetcode/tree/199.binary-tree-right-side-view.md
-      - 226. 翻转二叉树: leetcode/tree/226.invert-binary-tree.md
-      - 236. 二叉树的最近公共祖先: leetcode/tree/236.lowest-common-ancestor-of-a-binary-tree.md
-      - 543. 二叉树的直径: leetcode/tree/543.diameter-of-binary-tree.md
-      - 617.合并二叉树: leetcode/tree/617.merge-two-binary-trees.md
-      - 剑指 Offer 26.树的子结构: leetcode/tree/26.shu-de-zi-jie-gou-lcof.md
-      - 剑指 Offer 32 - I.从上到下打印二叉树: leetcode/tree/32-i.cong-shang-dao-xia-da-yin-er-cha-shu-lcof.md
-      - 剑指 Offer 32 - II.从上到下打印二叉树 II: leetcode/tree/32-ii.cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof.md
-      - 剑指 Offer 33.二叉搜索树的后序遍历序列: leetcode/tree/33.er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof.md
-      - 剑指 Offer 54. 二叉搜索树的第k大节点: leetcode/tree/54.er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof.md
-    - 二分查找（7）:
-      - 剑指 Offer 11. 旋转数组的最小数字: leetcode/binary-search/11.xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof.md
-      - 剑指 Offer 53 - II. 0～n-1中缺失的数字: leetcode/binary-search/53-ii.que-shi-de-shu-zi-lcof.md
-      - 33.搜索旋转排序数组: leetcode/binary-search/33.search-in-rotated-sorted-array.md
-      - 34.在排序数组中查找元素的第一个和最后一个位置: leetcode/binary-search/34.find-first-and-last-position-of-element-in-sorted-array.md
-      - 35.搜索插入位置: leetcode/binary-search/35.search-insert-position.md
-      - 167.两数之和 II - 输入有序数组: leetcode/binary-search/167.two-sum-ii-input-array-is-sorted.md
-      - 704.二分查找: leetcode/binary-search/704.binary-search.md
-      - 744. 寻找比目标字母大的最小字母: leetcode/binary-search/744.find-smallest-letter-greater-than-target.md
-    - 哈希表（3）:
-      - 49.字母异位词分组: leetcode/hash-table/49.group-anagrams.md
-      - 50.第一个只出现一次的字符: leetcode/hash-table/50.di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof.md
-      - 217.存在重复元素: leetcode/hash-table/217.contains-duplicate.md
-      - 219.存在重复元素 II: leetcode/hash-table/219.contains-duplicate-ii.md
-    - 字符串（8）:
-      - 3.无重复字符的最长子串: leetcode/string/3.longest-substring-without-repeating-characters.md
-      - 6.Z 字形变换: leetcode/string/6.zigzag-conversion.md
-      - 13.罗马数字转整数: leetcode/string/13.roman-to-integer.md
-      - 14.最长公共前缀: leetcode/string/14.longest-common-prefix.md
-      - 38.外观数列: leetcode/string/38.count-and-say.md
-      - 67.二进制求和: leetcode/string/67.add-binary.md
-      - 344.反转字符串: leetcode/string/344.reverse-string.md
-      - 345.反转字符串中的元音字母: leetcode/string/345.reverse-vowels-of-a-string.md
-    - 位运算（2）:
-      - 191.位1的个数: leetcode/bit-manipulation/191.number-of-1-bits.md
-      - 16.数值的整数次方: leetcode/bit-manipulation/16.shu-zhi-de-zheng-shu-ci-fang-lcof.md
-      - 268.丢失的数字: leetcode/bit-manipulation/268.missing-number.md
-    - 递归（3）:
-      - 剑指 Offer 10- I.斐波那契数列: leetcode/recursion/10-i.fei-bo-na-qi-shu-lie-lcof.md
-      - 剑指 Offer 10- II.青蛙跳台阶问题: leetcode/recursion/10-ii.qing-wa-tiao-tai-jie-wen-ti-lcof.md
-      - 70.爬楼梯: leetcode/recursion/70.climbing-stairs.md
-    - 回溯（1）:
-      - 51.N 皇后: leetcode/backtracking/51.n-queens.md
-    - 动态规划（2）: 
-      - 剑指 Offer 42.连续子数组的最大和: leetcode/dynamic-programming/42.lian-xu-zi-shu-zu-de-zui-da-he-lcof.md
-      - 63. 股票的最大利润: leetcode/dynamic-programming/63.gu-piao-de-zui-da-li-run-lcof.md
-    - 数学（5）:
-      - 7.整数反转: leetcode/math/7.reverse-integer.md
-      - 9.回文数: leetcode/math/9.palindrome-number.md
-      - 17. 打印从1到最大的n位数: leetcode/math/17.da-yin-cong-1dao-zui-da-de-nwei-shu-lcof.md
-      - 836.矩形重叠: leetcode/math/836.rectangle-overlap.md
-      - 1103.分糖果 II: leetcode/math/1103.distribute-candies-to-people.md
-  - Python:
-    - 第2章　变量和简单数据类型: python/di-2-zhang-bian-liang-he-jian-dan-shu-ju-lei-xing.md
-    - 第3章　列表简介: python/di-3-zhang-lie-biao-jian-jie.md
-    - 第4章　操作列表: python/di-4-zhang-cao-zuo-lie-biao.md
-    - 第5章　if语句: python/di-5-zhang-if-yu-ju.md
-    - 第6章　字典: python/di-6-zhang-zi-dian.md
-    - 第7章　用户输入和while循环: python/di-7-zhang-yong-hu-shu-ru-he-while-xun-huan.md
-    - 第8章　函数: python/di-8-zhang-han-shu.md
-    - 第9章　类: python/di-9-zhang-lei.md
-    - 第10章　文件和异常: python/di-10-zhang-wen-jian-he-yi-chang.md
-    - 第15章 生成数据: python/di-15-zhang-sheng-cheng-shu-ju.md
-  - Java:
-    - Java编程思想:
-      - Java8介绍: java/java8.md
-      - 第2章一切都是对象: java/thinking-in-java/everything-is-an-object.md
-      - 第3章操作符: java/thinking-in-java/operators.md
-      - 第4章控制流程: java/thinking-in-java/controlling-execution.md
-      - 第5章初始化与清理: java/thinking-in-java/initialization-and-cleanup.md
-      - 第6章访问权限控制: java/thinking-in-java/access-control.md
-      - 第7章复用类: java/thinking-in-java/reusing-classes.md
-      - 第8章多态: java/thinking-in-java/polymorphism.md
-      - 第9章接口: java/thinking-in-java/interfaces.md
-      - 第10章内部类: java/thinking-in-java/inner-classes.md
-      - 第11章持有对象: java/thinking-in-java/holding-your-objects.md
-      - 第12章通过异常处理错误: java/thinking-in-java/error-handling-with-exceptions.md
-      - 第13章字符串: java/thinking-in-java/strings.md
-      - 第14章类型信息: java/thinking-in-java/type-information.md
-      - 第15章泛型: java/thinking-in-java/generics.md
-      - 第16章数组: java/thinking-in-java/arrays.md
-      - 第17章容器深入研究: java/thinking-in-java/containers-in-depth.md
-      - 第18章I/O系统: java/thinking-in-java/i-o.md
-      - 第19章枚举类型: java/thinking-in-java/enumerated-types.md
-      - 第20章注解: java/thinking-in-java/annotations.md
-      - 第21章并发: java/thinking-in-java/concurrency.md
-    - Effective Java: 
-      - 第2章创建和销毁对象: java/effective-java/creating-and-destroying-objects.md
-      - 第3章对于所有对象都通用的方法: java/effective-java/methods-common-to-all-objects.md
-      - 第4章类和接口: java/effective-java/classes-and-interfaces.md
-      - 第5章泛型: java/effective-java/generics.md
-      - 第6章枚举和注解: java/effective-java/enums-and-annotations.md
-      - 第7章lambda表达式和流: java/effective-java/lambdas-and-streams.md
-      - 第8章方法: java/effective-java/methods.md
-      - 第9章通用程序设计: java/effective-java/general-programming.md
-      - 第10章异常: java/effective-java/exceptions.md
-      - 第11章并发: java/effective-java/concurrency.md
-      - 第12章序列化: java/effective-java/serialization.md
-    - JVM:
-      - Java内存区域与内存溢出: java/jvm/runtime-data-areas.md
-      - 垃圾收集器与内存分配策略: java/jvm/garbage-collection.md
-      - 类文件结构: java/jvm/class-file-structure.md
-      - 虚拟机类加载机制: java/jvm/classloader.md
-      - 虚拟机字节码执行引擎: java/jvm/execution-engin.md
-      - 编译期优化: java/jvm/compilation-optimization.md
-      - Java内存模型与线程: java/jvm/java-memory-model-and-thread.md
-      - 线程安全与锁优化: java/jvm/thread-safe-and-lock-optimization.md
-  - Kotlin:
-    - 第2章 kotlin基础: kotlin/di-2-zhang-kotlin-ji-chu.md
-    - 第3章 函数的定义与调用: kotlin/di-3-zhang-han-shu-de-ding-yi-yu-tiao-yong.md
-    - 第4章 类对象和接口: kotlin/chapter4-classes-objects-and-interfaces.md
-    - 高阶函数与 lambda 表达式: kotlin/di-5-zhang-lambda-bian-cheng.md
-    - 第6章 Kotlin的类型系统: kotlin/di-6-zhang-kotlin-de-lei-xing-xi-tong.md
-    - 第7章 运算符重载及其他约定: kotlin/di-7-zhang-yun-suan-fu-zhong-zai-ji-qi-ta-yue-ding.md
-    - 高阶函数: kotlin/higher-order-functions.md
-    - 第11章 DSL构建: kotlin/di-11-zhang-dsl-gou-jian.md
-    - 协程: kotlin/xie-cheng.md
-  - JavaScript:
-    - 第2章 在HTML中使用JavaScript: javascript/chapter-2-javascript-in-html.md
-  - C++:
-    - 第1章 开始: cpp/di-1-zhang-kai-shi.md
-    - 第2章 变量和基本类型: cpp/di-2-zhang-bian-liang-he-ji-ben-lei-xing.md
-    - 第3章 字符串、向量和数组: cpp/di-3-zhang-zi-fu-chuan-xiang-liang-he-shu-zu.md
-    - 第4章 表达式: cpp/di-4-zhang-biao-da-shi.md
-    - 第5章 语句: cpp/di-5-zhang-yu-ju.md
-    - 第6章 函数: cpp/di-6-zhang-han-shu.md
-    - 第7章 类: cpp/di-7-zhang-lei.md
-    - 第8章 IO库: cpp/di-8-zhang-io-ku.md
-    - 第9章 顺序容器: cpp/di-9-zhang-shun-xu-rong-qi.md
-    - 第10章 泛型算法: cpp/di-10-zhang-fan-xing-suan-fa.md
-    - 第11章 关联容器: cpp/di-11-zhang-guan-lian-rong-qi.md
-    - 第12章 动态内存: cpp/di-12-zhang-dong-tai-nei-cun.md
-    - 第13章 拷贝控制: cpp/di-13-zhang-kao-bei-kong-zhi.md
-    - 第14章 操作重载与类型转换: cpp/di-14-zhang-cao-zuo-zhong-zai-yu-lei-xing-zhuan-huan.md
-    - 第15章 面向对象程序设计: cpp/di-15-zhang-mian-xiang-dui-xiang-cheng-xu-she-ji.md
-    - 第16章 模版与泛型编程: cpp/di-16-zhang-mo-ban-yu-fan-xing-bian-cheng.md
-    - 第17章 标准库特殊设施: cpp/di-17-zhang-biao-zhun-ku-te-shu-she-shi.md
-    - 第18章 用于大型程序的工具: cpp/di-18-zhang-yong-yu-da-xing-cheng-xu-de-gong-ju.md
-    - 第19章 特殊工具与技术: cpp/di-19-zhang-te-shu-gong-ju-yu-ji-shu.md
+  # - Android:  
+  #   - 开源库:
+  #     - EventBus: android/thirdparty/eventbus.md
+  #     - Okio概览: android/thirdparty/okio-overview.md
+  #     - Okio菜谱: android/thirdparty/okio-recipes.md
+  #     - Okio源码分析: android/thirdparty/okio.md
+  #     - OkHttp文档:
+  #       - OkHttp概览: android/thirdparty/okhttp-shi-yong.md
+  #       - OkHttp缓存: android/thirdparty/okhttp-cache.md
+  #       - OkHttp拦截器: android/thirdparty/okhttp-interceptor.md
+  #     - OkHttp源码分析: android/thirdparty/okhttp.md
+  #     - Glide源码分析:
+  #       - Glide流程分析: android/thirdparty/glide.md
+  #       - Glide请求分析: android/thirdparty/glide-request.md
+  #       - Glide缓存分析: android/thirdparty/glide-cache.md
+  #       - Glide线程池: android/thirdparty/glide-threadpool.md
+  #     - LeakCanary源码分析: android/thirdparty/leakcanary-source-analysis.md
+  # - LeetCode:
+  #   - 排序（1）:
+  #     - 冒泡排序: leetcode/sort/bubble-sort.md
+  #   - 数组（16）:
+  #     - 1.两数之和: leetcode/array/1.two-sum.md
+  #     - 11.盛最多水的容器: leetcode/array/11.container-with-most-water.md
+  #     - 15. 三数之和: leetcode/array/15.3sum.md
+  #     - 26.删除排序数组中的重复项: leetcode/array/26.remove-duplicates-from-sorted-array.md
+  #     - 27.移除元素: leetcode/array/27.remove-element.md
+  #     - 31.下一个排列: leetcode/array/31.next-permutation.md
+  #     - 48.旋转图像: leetcode/array/48.rotate-image.md
+  #     - 66.加一: leetcode/array/66.plus-one.md
+  #     - 88.合并两个有序数组: leetcode/array/88.merge-sorted-array.md
+  #     - 118.杨辉三角: leetcode/array/118.pascals-triangle.md
+  #     - 119.杨辉三角 II: leetcode/array/119.pascals-triangle-ii.md
+  #     - 169.多数元素: leetcode/array/169.majority-element.md
+  #     - 283.移动零: leetcode/array/283.move-zeroes.md
+  #     - 349. 两个数组的交集: leetcode/array/349.intersection-of-two-arrays.md
+  #     - 448.找到所有数组中消失的数字: leetcode/array/448.find-all-numbers-disappeared-in-an-array.md
+  #     - 830. 较大分组的位置: leetcode/array/830.positions-of-large-groups.md
+  #     - 剑指 Offer 03.数组中重复的数字: leetcode/array/03.shu-zu-zhong-zhong-fu-de-shu-zi-lcof.md
+  #     - 剑指 Offer 21.调整数组顺序使奇数位于偶数前面: leetcode/array/jian-zhi-offer-21.-tiao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian.md
+  #     - 剑指 Offer 29.顺时针打印矩阵: leetcode/array/jian-zhi-offer-29.-shun-shi-zhen-da-yin-ju-zhen.md
+  #   - 队列&栈（4）:
+  #     - 剑指 Offer 09.用两个栈实现队列: leetcode/queue-stack/9.yong-liang-ge-zhan-shi-xian-dui-lie-lcof.md
+  #     - 20.有效的括号: leetcode/queue-stack/20.valid-parentheses.md
+  #     - 155.最小栈: leetcode/queue-stack/155.min-stack.md
+  #     - 232.用栈实现队列: leetcode/queue-stack/232.implement-queue-using-stacks.md
+  #     - 844. 比较含退格的字符串: leetcode/queue-stack/844.backspace-string-compare.md
+  #   - 链表（21）:
+  #     - 2.两数相加: leetcode/linked-list/2.add-two-numbers.md
+  #     - 19.删除链表的倒数第N个节点: leetcode/linked-list/19.remove-nth-node-from-end-of-list.md
+  #     - 21. 合并两个有序链表: leetcode/linked-list/21.merge-two-sorted-lists.md
+  #     - 23.合并K个升序链表: leetcode/linked-list/23.merge-k-sorted-lists.md
+  #     - 24.两两交换链表中的节点: leetcode/linked-list/24.swap-nodes-in-pairs.md
+  #     - 61.旋转链表: leetcode/linked-list/61.rotate-list.md
+  #     - 83.删除排序链表中的重复元素: leetcode/linked-list/83.remove-duplicates-from-sorted-list.md
+  #     - 82.删除排序链表中的重复元素II: leetcode/linked-list/82.remove-duplicates-from-sorted-list-ii.md
+  #     - 86.分隔链表: leetcode/linked-list/86.partition-list.md
+  #     - 92. 反转链表II: leetcode/linked-list/92.reverse-linked-list-ii.md
+  #     - 141.环形链表: leetcode/linked-list/141.linked-list-cycle.md
+  #     - 142.环形链表 II: leetcode/linked-list/142.linked-list-cycle-ii.md
+  #     - 143. 重排链表: leetcode/linked-list/143.reorder-list.md
+  #     - 147. 对链表进行插入排序: leetcode/linked-list/147.insertion-sort-list.md
+  #     - 160. 相交链表: leetcode/linked-list/160.intersection-of-two-linked-lists.md
+  #     - 206.反转链表: leetcode/linked-list/206.reverse-linked-list.md
+  #     - 203.移除链表元素: leetcode/linked-list/203.remove-linked-list-elements.md
+  #     - 234.回文链表: leetcode/linked-list/234.palindrome-linked-list.md
+  #     - 237.删除链表中的节点: leetcode/linked-list/237.delete-node-in-a-linked-list.md
+  #     - 445. 两数相加 II: leetcode/linked-list/445.add-two-numbers-ii.md
+  #     - 1721.交换链表中的节点: leetcode/linked-list/1721.swapping-nodes-in-a-linked-list.md
+  #     - 剑指 Offer 06.从尾到头打印链表: leetcode/linked-list/06.cong-wei-dao-tou-da-yin-lian-biao.md
+  #     - 剑指 Offer 18.删除链表的节点: leetcode/linked-list/18.shan-chu-lian-biao-de-jie-dian-lcof.md
+  #     - 剑指 Offer 22.链表中倒数第k个节点: leetcode/linked-list/22.lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof.md
+  #     - 剑指 Offer 35.复杂链表的复制: leetcode/linked-list/35.fu-za-lian-biao-de-fu-zhi-lcof.md
+  #   - 树（22）:
+  #     - 144. 二叉树的前序遍历: leetcode/tree/144.binary-tree-preorder-traversal.md
+  #     - 94. 二叉树的中序遍历: leetcode/tree/94.binary-tree-inorder-traversal.md
+  #     - 145. 二叉树的后序遍历: leetcode/tree/145.binary-tree-postorder-traversal.md
+  #     - 589. N叉树的前序遍历: leetcode/tree/589.n-ary-tree-preorder-traversal.md
+  #     - 101. 对称二叉树: leetcode/tree/101.symmetric-tree.md
+  #     - 102.二叉树的层序遍历: leetcode/tree/102.binary-tree-level-order-traversal.md
+  #     - 104.二叉树的最大深度: leetcode/tree/104.maximum-depth-of-binary-tree.md
+  #     - 105.从前序与中序遍历序列构造二叉树: leetcode/tree/105.construct-binary-tree-from-preorder-and-inorder-traversal.md
+  #     - 107.二叉树的层次遍历 II: leetcode/tree/107.binary-tree-level-order-traversal-ii.md
+  #     - 110. 平衡二叉树: leetcode/tree/110.balanced-binary-tree.md
+  #     - 114.二叉树展开为链表: leetcode/tree/114.flatten-binary-tree-to-linked-list.md
+  #     - 199.二叉树的右视图: leetcode/tree/199.binary-tree-right-side-view.md
+  #     - 226. 翻转二叉树: leetcode/tree/226.invert-binary-tree.md
+  #     - 236. 二叉树的最近公共祖先: leetcode/tree/236.lowest-common-ancestor-of-a-binary-tree.md
+  #     - 543. 二叉树的直径: leetcode/tree/543.diameter-of-binary-tree.md
+  #     - 617.合并二叉树: leetcode/tree/617.merge-two-binary-trees.md
+  #     - 剑指 Offer 26.树的子结构: leetcode/tree/26.shu-de-zi-jie-gou-lcof.md
+  #     - 剑指 Offer 32 - I.从上到下打印二叉树: leetcode/tree/32-i.cong-shang-dao-xia-da-yin-er-cha-shu-lcof.md
+  #     - 剑指 Offer 32 - II.从上到下打印二叉树 II: leetcode/tree/32-ii.cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof.md
+  #     - 剑指 Offer 33.二叉搜索树的后序遍历序列: leetcode/tree/33.er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof.md
+  #     - 剑指 Offer 54. 二叉搜索树的第k大节点: leetcode/tree/54.er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof.md
+  #   - 二分查找（7）:
+  #     - 剑指 Offer 11. 旋转数组的最小数字: leetcode/binary-search/11.xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof.md
+  #     - 剑指 Offer 53 - II. 0～n-1中缺失的数字: leetcode/binary-search/53-ii.que-shi-de-shu-zi-lcof.md
+  #     - 33.搜索旋转排序数组: leetcode/binary-search/33.search-in-rotated-sorted-array.md
+  #     - 34.在排序数组中查找元素的第一个和最后一个位置: leetcode/binary-search/34.find-first-and-last-position-of-element-in-sorted-array.md
+  #     - 35.搜索插入位置: leetcode/binary-search/35.search-insert-position.md
+  #     - 167.两数之和 II - 输入有序数组: leetcode/binary-search/167.two-sum-ii-input-array-is-sorted.md
+  #     - 704.二分查找: leetcode/binary-search/704.binary-search.md
+  #     - 744. 寻找比目标字母大的最小字母: leetcode/binary-search/744.find-smallest-letter-greater-than-target.md
+  #   - 哈希表（3）:
+  #     - 49.字母异位词分组: leetcode/hash-table/49.group-anagrams.md
+  #     - 50.第一个只出现一次的字符: leetcode/hash-table/50.di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof.md
+  #     - 217.存在重复元素: leetcode/hash-table/217.contains-duplicate.md
+  #     - 219.存在重复元素 II: leetcode/hash-table/219.contains-duplicate-ii.md
+  #   - 字符串（8）:
+  #     - 3.无重复字符的最长子串: leetcode/string/3.longest-substring-without-repeating-characters.md
+  #     - 6.Z 字形变换: leetcode/string/6.zigzag-conversion.md
+  #     - 13.罗马数字转整数: leetcode/string/13.roman-to-integer.md
+  #     - 14.最长公共前缀: leetcode/string/14.longest-common-prefix.md
+  #     - 38.外观数列: leetcode/string/38.count-and-say.md
+  #     - 67.二进制求和: leetcode/string/67.add-binary.md
+  #     - 344.反转字符串: leetcode/string/344.reverse-string.md
+  #     - 345.反转字符串中的元音字母: leetcode/string/345.reverse-vowels-of-a-string.md
+  #   - 位运算（2）:
+  #     - 191.位1的个数: leetcode/bit-manipulation/191.number-of-1-bits.md
+  #     - 16.数值的整数次方: leetcode/bit-manipulation/16.shu-zhi-de-zheng-shu-ci-fang-lcof.md
+  #     - 268.丢失的数字: leetcode/bit-manipulation/268.missing-number.md
+  #   - 递归（3）:
+  #     - 剑指 Offer 10- I.斐波那契数列: leetcode/recursion/10-i.fei-bo-na-qi-shu-lie-lcof.md
+  #     - 剑指 Offer 10- II.青蛙跳台阶问题: leetcode/recursion/10-ii.qing-wa-tiao-tai-jie-wen-ti-lcof.md
+  #     - 70.爬楼梯: leetcode/recursion/70.climbing-stairs.md
+  #   - 回溯（1）:
+  #     - 51.N 皇后: leetcode/backtracking/51.n-queens.md
+  #   - 动态规划（2）: 
+  #     - 剑指 Offer 42.连续子数组的最大和: leetcode/dynamic-programming/42.lian-xu-zi-shu-zu-de-zui-da-he-lcof.md
+  #     - 63. 股票的最大利润: leetcode/dynamic-programming/63.gu-piao-de-zui-da-li-run-lcof.md
+  #   - 数学（5）:
+  #     - 7.整数反转: leetcode/math/7.reverse-integer.md
+  #     - 9.回文数: leetcode/math/9.palindrome-number.md
+  #     - 17. 打印从1到最大的n位数: leetcode/math/17.da-yin-cong-1dao-zui-da-de-nwei-shu-lcof.md
+  #     - 836.矩形重叠: leetcode/math/836.rectangle-overlap.md
+  #     - 1103.分糖果 II: leetcode/math/1103.distribute-candies-to-people.md
+  # - Python:
+  #   - 第2章　变量和简单数据类型: python/di-2-zhang-bian-liang-he-jian-dan-shu-ju-lei-xing.md
+  #   - 第3章　列表简介: python/di-3-zhang-lie-biao-jian-jie.md
+  #   - 第4章　操作列表: python/di-4-zhang-cao-zuo-lie-biao.md
+  #   - 第5章　if语句: python/di-5-zhang-if-yu-ju.md
+  #   - 第6章　字典: python/di-6-zhang-zi-dian.md
+  #   - 第7章　用户输入和while循环: python/di-7-zhang-yong-hu-shu-ru-he-while-xun-huan.md
+  #   - 第8章　函数: python/di-8-zhang-han-shu.md
+  #   - 第9章　类: python/di-9-zhang-lei.md
+  #   - 第10章　文件和异常: python/di-10-zhang-wen-jian-he-yi-chang.md
+  #   - 第15章 生成数据: python/di-15-zhang-sheng-cheng-shu-ju.md
+  # - Java:
+  #   - Java编程思想:
+  #     - Java8介绍: java/java8.md
+  #     - 第2章一切都是对象: java/thinking-in-java/everything-is-an-object.md
+  #     - 第3章操作符: java/thinking-in-java/operators.md
+  #     - 第4章控制流程: java/thinking-in-java/controlling-execution.md
+  #     - 第5章初始化与清理: java/thinking-in-java/initialization-and-cleanup.md
+  #     - 第6章访问权限控制: java/thinking-in-java/access-control.md
+  #     - 第7章复用类: java/thinking-in-java/reusing-classes.md
+  #     - 第8章多态: java/thinking-in-java/polymorphism.md
+  #     - 第9章接口: java/thinking-in-java/interfaces.md
+  #     - 第10章内部类: java/thinking-in-java/inner-classes.md
+  #     - 第11章持有对象: java/thinking-in-java/holding-your-objects.md
+  #     - 第12章通过异常处理错误: java/thinking-in-java/error-handling-with-exceptions.md
+  #     - 第13章字符串: java/thinking-in-java/strings.md
+  #     - 第14章类型信息: java/thinking-in-java/type-information.md
+  #     - 第15章泛型: java/thinking-in-java/generics.md
+  #     - 第16章数组: java/thinking-in-java/arrays.md
+  #     - 第17章容器深入研究: java/thinking-in-java/containers-in-depth.md
+  #     - 第18章I/O系统: java/thinking-in-java/i-o.md
+  #     - 第19章枚举类型: java/thinking-in-java/enumerated-types.md
+  #     - 第20章注解: java/thinking-in-java/annotations.md
+  #     - 第21章并发: java/thinking-in-java/concurrency.md
+  #   - Effective Java: 
+  #     - 第2章创建和销毁对象: java/effective-java/creating-and-destroying-objects.md
+  #     - 第3章对于所有对象都通用的方法: java/effective-java/methods-common-to-all-objects.md
+  #     - 第4章类和接口: java/effective-java/classes-and-interfaces.md
+  #     - 第5章泛型: java/effective-java/generics.md
+  #     - 第6章枚举和注解: java/effective-java/enums-and-annotations.md
+  #     - 第7章lambda表达式和流: java/effective-java/lambdas-and-streams.md
+  #     - 第8章方法: java/effective-java/methods.md
+  #     - 第9章通用程序设计: java/effective-java/general-programming.md
+  #     - 第10章异常: java/effective-java/exceptions.md
+  #     - 第11章并发: java/effective-java/concurrency.md
+  #     - 第12章序列化: java/effective-java/serialization.md
+  #   - JVM:
+  #     - Java内存区域与内存溢出: java/jvm/runtime-data-areas.md
+  #     - 垃圾收集器与内存分配策略: java/jvm/garbage-collection.md
+  #     - 类文件结构: java/jvm/class-file-structure.md
+  #     - 虚拟机类加载机制: java/jvm/classloader.md
+  #     - 虚拟机字节码执行引擎: java/jvm/execution-engin.md
+  #     - 编译期优化: java/jvm/compilation-optimization.md
+  #     - Java内存模型与线程: java/jvm/java-memory-model-and-thread.md
+  #     - 线程安全与锁优化: java/jvm/thread-safe-and-lock-optimization.md
+  # - Kotlin:
+  #   - 第2章 kotlin基础: kotlin/di-2-zhang-kotlin-ji-chu.md
+  #   - 第3章 函数的定义与调用: kotlin/di-3-zhang-han-shu-de-ding-yi-yu-tiao-yong.md
+  #   - 第4章 类对象和接口: kotlin/chapter4-classes-objects-and-interfaces.md
+  #   - 高阶函数与 lambda 表达式: kotlin/di-5-zhang-lambda-bian-cheng.md
+  #   - 第6章 Kotlin的类型系统: kotlin/di-6-zhang-kotlin-de-lei-xing-xi-tong.md
+  #   - 第7章 运算符重载及其他约定: kotlin/di-7-zhang-yun-suan-fu-zhong-zai-ji-qi-ta-yue-ding.md
+  #   - 高阶函数: kotlin/higher-order-functions.md
+  #   - 第11章 DSL构建: kotlin/di-11-zhang-dsl-gou-jian.md
+  #   - 协程: kotlin/xie-cheng.md
+  # - JavaScript:
+  #   - 第2章 在HTML中使用JavaScript: javascript/chapter-2-javascript-in-html.md
+  # - C++:
+  #   - 第1章 开始: cpp/di-1-zhang-kai-shi.md
+  #   - 第2章 变量和基本类型: cpp/di-2-zhang-bian-liang-he-ji-ben-lei-xing.md
+  #   - 第3章 字符串、向量和数组: cpp/di-3-zhang-zi-fu-chuan-xiang-liang-he-shu-zu.md
+  #   - 第4章 表达式: cpp/di-4-zhang-biao-da-shi.md
+  #   - 第5章 语句: cpp/di-5-zhang-yu-ju.md
+  #   - 第6章 函数: cpp/di-6-zhang-han-shu.md
+  #   - 第7章 类: cpp/di-7-zhang-lei.md
+  #   - 第8章 IO库: cpp/di-8-zhang-io-ku.md
+  #   - 第9章 顺序容器: cpp/di-9-zhang-shun-xu-rong-qi.md
+  #   - 第10章 泛型算法: cpp/di-10-zhang-fan-xing-suan-fa.md
+  #   - 第11章 关联容器: cpp/di-11-zhang-guan-lian-rong-qi.md
+  #   - 第12章 动态内存: cpp/di-12-zhang-dong-tai-nei-cun.md
+  #   - 第13章 拷贝控制: cpp/di-13-zhang-kao-bei-kong-zhi.md
+  #   - 第14章 操作重载与类型转换: cpp/di-14-zhang-cao-zuo-zhong-zai-yu-lei-xing-zhuan-huan.md
+  #   - 第15章 面向对象程序设计: cpp/di-15-zhang-mian-xiang-dui-xiang-cheng-xu-she-ji.md
+  #   - 第16章 模版与泛型编程: cpp/di-16-zhang-mo-ban-yu-fan-xing-bian-cheng.md
+  #   - 第17章 标准库特殊设施: cpp/di-17-zhang-biao-zhun-ku-te-shu-she-shi.md
+  #   - 第18章 用于大型程序的工具: cpp/di-18-zhang-yong-yu-da-xing-cheng-xu-de-gong-ju.md
+  #   - 第19章 特殊工具与技术: cpp/di-19-zhang-te-shu-gong-ju-yu-ji-shu.md
