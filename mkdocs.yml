@@ -8,9 +8,10 @@ repo_url: https://github.com/malinkang/note
 
 # Copyright
 copyright: Copyright &copy; 2013 - 2021 malinkang
+
 theme:
-  name: null
-  custom_dir: !ENV [THEME_DIR, "material"]
+  name: material
+  # custom_dir: !ENV [THEME_DIR, "material"]
   logo: https://avatars.githubusercontent.com/u/3365208?v=4
   # Don't include MkDocs' JavaScript
   include_search_page: false
@@ -23,7 +24,6 @@ theme:
     - content.code.annotate-code
     - navigation.tabs
     - navigation.top
-
   palette:
     - scheme: default
       primary: light-blue
@@ -59,10 +59,10 @@ extra:
       link: https://medium.com/malinkang
   disqus: 'OI-wiki'
 
-# Extensions   
+# Extensions
 markdown_extensions:
-  - admonition
   - abbr
+  - admonition
   - attr_list
   - def_list
   - footnotes
@@ -77,9 +77,10 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -91,7 +92,7 @@ markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
-          class: mermaid-experimental
+          class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
@@ -99,9 +100,6 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-
-extra_javascript:
-  - https://unpkg.com/mermaid@8.13.3/dist/mermaid.min.js
 nav:
   - Android:  
     - 开源库:
