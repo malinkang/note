@@ -12,5 +12,6 @@
     - 性能优化:
       - Matrix源码分析: android/性能优化/matrix.md
     - 数据存储:
+      - SharedPreference: android/数据存储/sharedpreference.md
     - Jetpack:
       - Navigation使用: android/jetpack/navigation.md
