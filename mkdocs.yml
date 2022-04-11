@@ -10,8 +10,8 @@ repo_url: https://github.com/malinkang/note
 copyright: Copyright &copy; 2013 - 2021 malinkang
 
 theme:
-  name: material
-  # custom_dir: !ENV [THEME_DIR, "material"]
+  name: null
+  custom_dir: !ENV [THEME_DIR, "material"]
   logo: https://avatars.githubusercontent.com/u/3365208?v=4
   # Don't include MkDocs' JavaScript
   include_search_page: false
