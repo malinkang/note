@@ -1,0 +1,35 @@
+name: write diary
+
+on:
+  push:
+  workflow_dispatch:
+   
+
+jobs:
+  sync:
+    name: Sync
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: sync android
+        run: |
+          python scripts/generator.py '${{ secrets.NOTION_SECRET }}' '${{ secrets.NOTION_VERSION }}' '${{ secrets.ANDROID_PAGE_ID }}'
+      - name: sync android
+        run: |
+          python scripts/generator.py '${{ secrets.NOTION_SECRET }}' '${{ secrets.NOTION_VERSION }}' '${{ secrets.JAVA_PAGE_ID }}'
+      - name: sync java
+        run: |
+          python scripts/generator.py '${{ secrets.NOTION_SECRET }}' '${{ secrets.NOTION_VERSION }}' '${{ secrets.JAVA_PAGE_ID }}'
+      - name: sync java
+        run: |
+          python scripts/generator_nav.py

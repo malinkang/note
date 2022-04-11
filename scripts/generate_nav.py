@@ -4,7 +4,8 @@ from genericpath import isdir
 import os
 files = [
     "nav.md",
-    "./docs/android/README.md",
+    "./docs/android/README.md", 
+    "./docs/java/README.md", 
     "./docs/leetcode/README.md",
 ]
 
