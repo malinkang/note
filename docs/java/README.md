@@ -11,6 +11,3 @@
       - 2013-01-19-classes-and-interfaces: java/effective java/classes-and-interfaces.md
       - 2013-01-12-methods-common-to-all-objects: java/effective java/methods-common-to-all-objects.md
       - 2013-01-05-creating-and-destroying-objects: java/effective java/creating-and-destroying-objects.md
-    - 并发:
-    - 基础:
-    - JVM:
