@@ -25,7 +25,6 @@ def retrieve_a_database(id):
     r = requests.get("https://api.notion.com/v1/databases/" +
                      id, headers=headers)
     json = r.json()
-    print(r.text)
     title = json.get("title")[0].get("text").get("content")
     title = title.lower()
     toc = "  - "+title+":\n"
@@ -119,6 +118,7 @@ def parse_format(text):
 def parse_content(id):
     markdown = ""
     r = retrieve_block_children(id)
+    print(r.text)
     results = r.json().get("results")
     for result in results:
         type = result.get("type")
