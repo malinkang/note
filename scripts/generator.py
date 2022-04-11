@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
+from calendar import c
 from multiprocessing import parent_process
 import os
 import pathlib
@@ -30,7 +31,6 @@ def retrieve_a_database(id):
     toc = "  - "+title+":\n"
     parent = root+"/"+title
     pathlib.Path(parent).mkdir(parents=True, exist_ok=True)
-    print(title)
     options = json.get("properties").get("Tag").get("select").get("options")
     for option in options:
         tag = option.get("name")
@@ -118,12 +118,11 @@ def parse_format(text):
 def parse_content(id):
     markdown = ""
     r = retrieve_block_children(id)
-    print(r.text)
     results = r.json().get("results")
     for result in results:
         type = result.get("type")
-        text = result.get(type).get("text")
-        if(not text is None):
+        text = result.get(type).get("rich_text")
+        if(text is not None):
             # text是一个数组 如果text长度为0 说明是回车
             if(len(text) > 0):
                 content = parse_format(text)
