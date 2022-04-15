@@ -87,8 +87,16 @@ def write_to_file(content, file):
 def parse_format(text):
     r = ''
     for t in text:
-        content = t.get("text").get("content")
-        link = t.get("text").get("link")
+        if(t.get("type") == "mention"):
+            url = t.get("mention").get("link_preview").get("url")
+            print(url)
+            return url
+        text = t.get("text")
+        if(text is None):
+            print(t)
+            return ""
+        content = text.get("content")
+        link = text.get("link")
         if(not link is None):
             url = link.get("url")
             content = "["+content+"]("+url+")"

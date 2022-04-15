@@ -7,6 +7,7 @@
       - Activity启动流程: android/aosp/start-activity.md
       - ArrayMap: android/aosp/arraymap.md
     - 三方源码:
+      - ARouter源码分析: android/三方源码/ARouter.md
       - Retrofit源码分析: android/三方源码/retrofit.md
       - LeakCanary: android/三方源码/leakcanary.md
     - 性能优化:
@@ -15,3 +16,4 @@
       - SharedPreference: android/数据存储/sharedpreference.md
     - Jetpack:
       - Navigation使用: android/jetpack/navigation.md
+      - ViewModel: android/jetpack/viewmodel.md
