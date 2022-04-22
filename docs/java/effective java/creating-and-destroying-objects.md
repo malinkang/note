@@ -4,7 +4,11 @@
 创建类实例最常用的方法就是提供一个公有的构造器。此外，还可以提供一个公有的`静态工厂方法（static factory method）`，它只是一个返回类的实例的静态方法。
 
 ```java
-//来自Boolean的简单示例//这个方法将boolean基本类型值转换成了一个Boolean对象引用：public static Boolean valueOf(boolean b) {    return b ? TRUE : FALSE;}
+//来自Boolean的简单示例
+//这个方法将boolean基本类型值转换成了一个Boolean对象引用：
+public static Boolean valueOf(boolean b) {
+    return b ? TRUE : FALSE;
+}
 ```
 
 **静态工厂方法与构造器不同的第一大优势在于，它们有名称。**
@@ -51,7 +55,39 @@ public static String valueOf(int i) {    return Integer.toString(i);}
 对于这样的类，程序员一向习惯采用**重叠构造器（telescoping constructor）**模式。
 
 ```java
-public class NutritionFacts {    private final int servingSize; //必选    private final int servings; //必选    private final int calories;//可选    private final int fat; //可选    private final int sodium; //可选    private final int carbohydrate; //可选    public NutritionFacts(int servingSize, int servings) {        this(servingSize, servings, 0);    }    public NutritionFacts(int servingSize, int servings, int calories) {        this(servingSize, servings, calories, 0);    }    public NutritionFacts(int servingSize, int servings, int calories, int fat) {        this(servingSize, servings, calories, fat, 0);    }    public NutritionFacts(int servingSize, int servings, int calories, int fat, int sodium) {        this(servingSize, servings, calories, fat, sodium, 0);    }    public NutritionFacts(int servingSize, int servings, int calories, int fat, int sodium, int carbohydrate) {        this.servingSize = servingSize;        this.servings = servings;        this.calories = calories;        this.fat = fat;        this.sodium = sodium;        this.carbohydrate = carbohydrate;    }}
+public class NutritionFacts {
+    private final int servingSize; //必选
+    private final int servings; //必选
+    private final int calories;//可选
+    private final int fat; //可选
+    private final int sodium; //可选
+    private final int carbohydrate; //可选
+
+    public NutritionFacts(int servingSize, int servings) {
+        this(servingSize, servings, 0);
+    }
+
+    public NutritionFacts(int servingSize, int servings, int calories) {
+        this(servingSize, servings, calories, 0);
+    }
+
+    public NutritionFacts(int servingSize, int servings, int calories, int fat) {
+        this(servingSize, servings, calories, fat, 0);
+    }
+
+    public NutritionFacts(int servingSize, int servings, int calories, int fat, int sodium) {
+        this(servingSize, servings, calories, fat, sodium, 0);
+    }
+
+    public NutritionFacts(int servingSize, int servings, int calories, int fat, int sodium, int carbohydrate) {
+        this.servingSize = servingSize;
+        this.servings = servings;
+        this.calories = calories;
+        this.fat = fat;
+        this.sodium = sodium;
+        this.carbohydrate = carbohydrate;
+    }
+}
 ```
 
 **重叠构造器模式可行，但是当有许多参数的时候，客户端代码会很难编写，并且仍然较难以阅读**。
@@ -59,7 +95,38 @@ public class NutritionFacts {    private final int servingSize; //必选    priv
 遇到许多构造器参数的时候，还有第二种替代方法，即`JavaBeans`模式。在这种模式下，调用一个无参构造器来创建对象，然后调用`setter`方法来设置每个必要的参数，以及每个相关的可选参数：
 
 ```java
-public class NutritionFacts {    private  int servingSize; //必选    private  int servings; //必选    private  int calories;//可选    private  int fat; //可选    private  int sodium; //可选    private  int carbohydrate; //可选    public void setServingSize(int servingSize) {        this.servingSize = servingSize;    }    public void setServings(int servings) {        this.servings = servings;    }    public void setCalories(int calories) {        this.calories = calories;    }    public void setFat(int fat) {        this.fat = fat;    }    public void setSodium(int sodium) {        this.sodium = sodium;    }    public void setCarbohydrate(int carbohydrate) {        this.carbohydrate = carbohydrate;    }}
+public class NutritionFacts {
+    private  int servingSize; //必选
+    private  int servings; //必选
+    private  int calories;//可选
+    private  int fat; //可选
+    private  int sodium; //可选
+    private  int carbohydrate; //可选
+
+    public void setServingSize(int servingSize) {
+        this.servingSize = servingSize;
+    }
+
+    public void setServings(int servings) {
+        this.servings = servings;
+    }
+
+    public void setCalories(int calories) {
+        this.calories = calories;
+    }
+
+    public void setFat(int fat) {
+        this.fat = fat;
+    }
+
+    public void setSodium(int sodium) {
+        this.sodium = sodium;
+    }
+
+    public void setCarbohydrate(int carbohydrate) {
+        this.carbohydrate = carbohydrate;
+    }
+}
 ```
 
 ```java
@@ -71,13 +138,71 @@ NutritionFacts cocaCola = new NutritionFacts();cocaCola.setServingSize(240);coca
 第三种替代方法`Builder`模式，既能保证像重叠构造器模式那样的安全性，也能保证像`JavaBeans`模式那么好的可读性。
 
 ```java
-public class NutritionFacts {    private final int servingSize; //必选    private final int servings; //必选    private final int calories;//可选    private final int fat; //可选    private final int sodium; //可选    private final int carbohydrate; //可选    public static class Builder {        //必选参数        private final int servingSize;        private final int servings;        //可选参数        private int calories = 0;//可选        private int fat = 0; //可选        private int sodium = 0; //可选        private int carbohydrate = 0; //可选        public Builder(int servingSize, int servings) {            this.servingSize = servingSize;            this.servings = servings;        }        public Builder calories(int val) {            calories = val;            return this;        }        public Builder fat(int val) {            fat = val;            return this;        }        public Builder sodium(int val) {            sodium = val;            return this;        }        public Builder carbohydrate(int val) {            carbohydrate = val;            return this;        }        public NutritionFacts build() {            return new NutritionFacts(this);        }    }    private NutritionFacts(Builder builder) {        servingSize = builder.servingSize;        servings = builder.servings;        calories = builder.calories;        fat = builder.fat;        sodium = builder.sodium;        carbohydrate = builder.carbohydrate;    }}
+public class NutritionFacts {
+    private final int servingSize; //必选
+    private final int servings; //必选
+    private final int calories;//可选
+    private final int fat; //可选
+    private final int sodium; //可选
+    private final int carbohydrate; //可选
+
+    public static class Builder {
+        //必选参数
+        private final int servingSize;
+        private final int servings;
+        //可选参数
+        private int calories = 0;//可选
+        private int fat = 0; //可选
+        private int sodium = 0; //可选
+        private int carbohydrate = 0; //可选
+
+        public Builder(int servingSize, int servings) {
+            this.servingSize = servingSize;
+            this.servings = servings;
+        }
+
+        public Builder calories(int val) {
+            calories = val;
+            return this;
+        }
+
+        public Builder fat(int val) {
+            fat = val;
+            return this;
+        }
+
+        public Builder sodium(int val) {
+            sodium = val;
+            return this;
+        }
+
+        public Builder carbohydrate(int val) {
+            carbohydrate = val;
+            return this;
+        }
+
+        public NutritionFacts build() {
+            return new NutritionFacts(this);
+        }
+    }
+
+    private NutritionFacts(Builder builder) {
+        servingSize = builder.servingSize;
+        servings = builder.servings;
+        calories = builder.calories;
+        fat = builder.fat;
+        sodium = builder.sodium;
+        carbohydrate = builder.carbohydrate;
+    }
+
+}
 ```
 
 调用
 
 ```java
- NutritionFacts cocaCola = new Builder(240, 8)                .calories(100).sodium(35).carbohydrate(27).build();
+NutritionFacts cocaCola = new Builder(240, 8)
+                .calories(100).sodium(35).carbohydrate(27).build();
 ```
 
 `Builder`模式也有自身的不足。为了创建对象，必须先创建它的构造器。虽然创建构造器的开销在实践中可能不那么明显，但是在某些时分注重性能的情况下，可能就成问题了。`Builder`模式还比重叠构造器模式更加冗长，因此它只在有很多参数的时候才使用。
@@ -92,19 +217,33 @@ public class NutritionFacts {    private final int servingSize; //必选    priv
 在`Java 1.5`发行版本之前，实现`Singleton`有两种方法：
 
 ```java
-public class Elvis {    public static final Elvis INSTANCE = new Elvis();    private Elvis() {}    public void leaveTheBuilding() {}}
+public class Elvis {
+    public static final Elvis INSTANCE = new Elvis();
+    private Elvis() {}
+    public void leaveTheBuilding() {}
+}
 ```
 
 在实现`Singleton`的第二种方法中，公有的成员是个静态工厂方法：
 
 ```java
-public class Elvis {    private static final Elvis INSTANCE = new Elvis();    public static Elvis getInstance() {        return INSTANCE;    }    private Elvis() {}    public void leaveTheBuilding() {}}
+public class Elvis {
+    private static final Elvis INSTANCE = new Elvis();
+    public static Elvis getInstance() {
+        return INSTANCE;
+    }
+    private Elvis() {}
+    public void leaveTheBuilding() {}
+}
 ```
 
 从`Java 1.5`发型版本起，实现`Singleton`还有第三种方法。只需编写一个包含单个元素的枚举类型。
 
 ```java
-public enum Elvis {    INSTANCE;    public void leaveTheBuilding(){}}
+public enum Elvis {
+    INSTANCE;
+    public void leaveTheBuilding(){}
+}
 ```
 
 这种方法在功能上与公有域方法相近，但是它更加简洁，无偿地提供了序列化机制，绝对防止多次序列化，即使是在面对复杂的序列化或者反射攻击的时候。虽然这种方法还没有广泛采用，但是单元素的枚举类型已经成为实现Singleton的最佳方法。
@@ -117,7 +256,11 @@ public enum Elvis {    INSTANCE;    public void leaveTheBuilding(){}}
 这样的工具类（utility class）不希望被实例化，实例化它没有任何意义。然而，在缺少显式构造器的情况下，编译器会自动提供一个公有的、无参的缺省构造器（default constructor）。对于用户而言，这个构造器与其他的构造器没有任何区别。在已发行的API中常常可以看到一些被无意识地实例化的类。
 
 ```java
-public class UtilityClass {    private UtilityClass(){        throw new AssertionError();    }}
+public class UtilityClass {
+    private UtilityClass(){
+        throw new AssertionError();
+    }
+}
 ```
 
 
@@ -126,7 +269,8 @@ public class UtilityClass {    private UtilityClass(){        throw new Assertio
 一般来说，最好能重用对象而不是在每次需要的时候就创建一个相同功能的新对象。重用方式既快速，又流行。如果对象是不可变的，它就始终可以被重用。
 
 ```java
-//该语句每次被执行的时候都创建一个新的String实例String s = new String("stringette");
+//该语句每次被执行的时候都创建一个新的String实例
+String s = new String("stringette");
 ```
 
 ```java
@@ -138,20 +282,82 @@ String s = "stringette";
 除了重用不可变的对象之外，也可以重用那些已知不会被修改的可变对象。
 
 ```java
-public class Person {    private final Date birthDate;    public Person(Date birthDate) {        this.birthDate = birthDate;    }    //检验这个人是否出生于1946年至1964年    public boolean isBabyBoomer() {        Calendar gmtCal = Calendar.getInstance(TimeZone.getTimeZone("GMT"));        gmtCal.set(1946, Calendar.JANUARY, 1, 0, 0, 0);        Date boomStart = gmtCal.getTime();        gmtCal.set(1965, Calendar.JANUARY, 1, 0, 0, 0);        Date boomEnd = gmtCal.getTime();        return birthDate.compareTo(boomStart) >= 0 &&                birthDate.compareTo(boomEnd) < 0;    }}
+public class Person {
+    private final Date birthDate;
+    public Person(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+    //检验这个人是否出生于1946年至1964年
+    public boolean isBabyBoomer() {
+        Calendar gmtCal = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
+        gmtCal.set(1946, Calendar.JANUARY, 1, 0, 0, 0);
+        Date boomStart = gmtCal.getTime();
+        gmtCal.set(1965, Calendar.JANUARY, 1, 0, 0, 0);
+        Date boomEnd = gmtCal.getTime();
+        return birthDate.compareTo(boomStart) >= 0 &&
+                birthDate.compareTo(boomEnd) < 0;
+    }
+}
 ```
 
 `isBabyBoomer`每次被调用的时候，都会新建一个`Calendar`、一个`TimeZone`和两个`Date`实例，这是不必要的。下面的版本用一个静态的初始化器（initializer），避免了这种效率低下的情况：
 
 ```java
-public class Person {    private final Date birthDate;    public Person(Date birthDate) {        this.birthDate = birthDate;    }    private static final Date BOOM_START;    private static final Date BOOM_END;    static {        Calendar gmtCal = Calendar.getInstance(TimeZone.getTimeZone("GMT"));        gmtCal.set(1946, Calendar.JANUARY, 1, 0, 0, 0);        BOOM_START = gmtCal.getTime();        gmtCal.set(1965, Calendar.JANUARY, 1, 0, 0, 0);        BOOM_END = gmtCal.getTime();    }    //检验这个人是否出生于1946年至1964年    public boolean isBabyBoomer() {        return birthDate.compareTo(BOOM_START) >= 0 &&                birthDate.compareTo(BOOM_END) < 0;    }}
+public class Person {
+    private final Date birthDate;
+
+    public Person(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    private static final Date BOOM_START;
+    private static final Date BOOM_END;
+    static {
+        Calendar gmtCal = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
+        gmtCal.set(1946, Calendar.JANUARY, 1, 0, 0, 0);
+        BOOM_START = gmtCal.getTime();
+        gmtCal.set(1965, Calendar.JANUARY, 1, 0, 0, 0);
+        BOOM_END = gmtCal.getTime();
+    }
+
+    //检验这个人是否出生于1946年至1964年
+    public boolean isBabyBoomer() {
+
+        return birthDate.compareTo(BOOM_START) >= 0 &&
+                birthDate.compareTo(BOOM_END) < 0;
+    }
+}
 ```
 
 
 ## 第7条：消除过期的对象引用
 
 ```java
-public class Stack {    private Object[] elements;    private int size = 0;    private static final int DEFAULT_INITIAL_CAPACITY = 16;    public Stack() {        elements = new Object[DEFAULT_INITIAL_CAPACITY];    }    public void push(Object e) {        ensureCapacity();        elements[size++] = e;    }    public Object pop() {        if (size == 0)            throw new EmptyStackException();        return elements[--size];    }    private void ensureCapacity() {        if (elements.length == size)            elements = Arrays.copyOf(elements, 2 * size + 1);    }}
+public class Stack {
+    private Object[] elements;
+    private int size = 0;
+    private static final int DEFAULT_INITIAL_CAPACITY = 16;
+
+    public Stack() {
+        elements = new Object[DEFAULT_INITIAL_CAPACITY];
+    }
+
+    public void push(Object e) {
+        ensureCapacity();
+        elements[size++] = e;
+    }
+
+    public Object pop() {
+        if (size == 0)
+            throw new EmptyStackException();
+        return elements[--size];
+    }
+
+    private void ensureCapacity() {
+        if (elements.length == size)
+            elements = Arrays.copyOf(elements, 2 * size + 1);
+    }
+}
 ```
 
 如果一个栈先是增长，然后再收缩，那么，从栈中弹出来的对象将不会被当作垃圾回收，即使使用栈的程序不再引用这些对象，它们也不会被回收。这是因为，栈内部维护着对这些对象的`过期引用（obsolete reference）`。所谓的过期引用，是指永远也不会再被解除的引用。在本例中，凡是`elements`数组的“活动部分”之外的任何引用都是过期的。活动部分是指`elements`中下标小于`size`的那些元素。
@@ -159,7 +365,13 @@ public class Stack {    private Object[] elements;    private int size = 0;    p
 这类问题的修复方法很简单：一旦对象引用已经过期，只需清空这些引用即可。
 
 ```java
-public Object pop() {    if (size == 0)        throw new EmptyStackException();    Object result = elements[--size];    elements[size] = null;    return result;}
+public Object pop() {
+    if (size == 0)
+        throw new EmptyStackException();
+    Object result = elements[--size];
+    elements[size] = null;
+    return result;
+}
 ```
 
 

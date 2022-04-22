@@ -9,5 +9,5 @@
       - 2013-02-02-enums-and-annotations: java/effective java/enums-and-annotations.md
       - 2013-01-26-generics: java/effective java/generics.md
       - 2013-01-19-classes-and-interfaces: java/effective java/classes-and-interfaces.md
-      - 2013-01-12-methods-common-to-all-objects: java/effective java/methods-common-to-all-objects.md
-      - 2013-01-05-creating-and-destroying-objects: java/effective java/creating-and-destroying-objects.md
+      - 第3章对于所有对象都通用的方法: java/effective java/methods-common-to-all-objects.md
+      - 第2章创建和销毁对象: java/effective java/creating-and-destroying-objects.md

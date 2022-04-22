@@ -14,11 +14,31 @@
 * 对于任何非null的引用值x，`x.equals(null)`必须返回false。
 
 ```java
-public class CaseInsensitiveString {    private final String s;    public CaseInsensitiveString(String s){        if(s==null)            throw new NullPointerException();        this.s = s;    }    @Override    public boolean equals(Object obj) {        if(obj instanceof CaseInsensitiveString)            return s.equalsIgnoreCase(((CaseInsensitiveString) obj).s);        if(obj instanceof String)            return s.equalsIgnoreCase((String) obj);        return false;    }}
+public class CaseInsensitiveString {
+    private final String s;
+    public CaseInsensitiveString(String s){
+        if(s==null)
+            throw new NullPointerException();
+        this.s = s;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof CaseInsensitiveString)
+            return s.equalsIgnoreCase(((CaseInsensitiveString) obj).s);
+        if(obj instanceof String)
+            return s.equalsIgnoreCase((String) obj);
+        return false;
+    }
+}
 ```
 
 ```java
-CaseInsensitiveString cis = new CaseInsensitiveString("Polish");String s = "polish";//违反了对称性System.out.println(cis.equals(s)); //trueSystem.out.println(s.equals(cis)); //false
+CaseInsensitiveString cis = new CaseInsensitiveString("Polish");
+String s = "polish";
+//违反了对称性
+System.out.println(cis.equals(s)); //true
+System.out.println(s.equals(cis)); //false
 ```
 
 一旦违反了`equals`约定，当其他对象面对你的对象时，你完全不知道这些对象的行为会怎么样。
@@ -26,23 +46,55 @@ CaseInsensitiveString cis = new CaseInsensitiveString("Polish");String s = "poli
 为了解决这个问题，只需把企图与`String`互操作的这段代码从`equals`方法中去掉就可以了。
 
 ```java
-@Overridepublic boolean equals(Object obj) {    return obj instanceof CaseInsensitiveString        && s.equalsIgnoreCase(((CaseInsensitiveString) obj).s);}
+@Override
+public boolean equals(Object obj) {
+    return obj instanceof CaseInsensitiveString
+        && s.equalsIgnoreCase(((CaseInsensitiveString) obj).s);
+}
 ```
 
 ```java
-public class Point {    private final int x;    private final int y;    public Point(int x, int y) {        this.x = x;        this.y = y;    }    @Override    public boolean equals(Object obj) {        if (!(obj instanceof Point))            return false;        Point point = (Point) obj;        return point.x == x && point.y == y;    }}
+public class Point {
+    private final int x;
+    private final int y;
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Point))
+            return false;
+        Point point = (Point) obj;
+        return point.x == x && point.y == y;
+    }
+}
 ```
 
 扩展这个类，为一个点添加颜色信息：
 
 ```java
-public class ColorPoint extends Point {    private final Color color;    public ColorPoint(int x, int y, Color color) {        super(x, y);        this.color = color;    }}
+public class ColorPoint extends Point {
+    private final Color color;
+
+    public ColorPoint(int x, int y, Color color) {
+        super(x, y);
+        this.color = color;
+    }
+}
 ```
 
 如果完全不提供`equals`方法，而是直接从`Point`继承过来，在`equals`做比较的时候颜色信息就被忽略掉了。编写一个`equals`方法，只有当它的参数是另一个有色点，并且具有同样的位置和颜色时，它才会返回`true`:
 
 ```java
-@Overridepublic boolean equals(Object obj) {    if (!(obj instanceof ColorPoint))        return false;    return super.equals(obj) && ((ColorPoint) obj).color == color;}
+@Override
+public boolean equals(Object obj) {
+    if (!(obj instanceof ColorPoint))
+        return false;
+    return super.equals(obj) && ((ColorPoint) obj).color == color;
+}
 ```
 
 这个方法的问题在于，你在比较普通点和有色点，以及相反的情形时，可能会得到不同的结果。前一种比较忽略了颜色信息，而后一种比较则总是返回`false`，因为参数的类型不正确。
