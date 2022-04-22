@@ -4,28 +4,27 @@
       - Service: android/四大组件/service.md
       - BroadcastReceiver: android/四大组件/broadcastreceiver.md
     - View:
-      - 自定义View: android/view/custom-view.md
-      - View事件分发: android/view/dispatch-touch-event.md
       - View: android/view/view.md
+      - View事件分发: android/view/dispatch-touch-event.md
+      - 自定义View: android/view/custom-view.md
     - 数据存储:
       - SharedPreference: android/数据存储/sharedpreference.md
     - RecyclerView:
-      - RecyclerView缓存分析: android/recyclerview/recyclerview-cache-analysis.md
-      - RecyclerView源码分析2: android/recyclerview/recyclerview-analysis-2.md
       - RecyclerView源码分析1: android/recyclerview/recyclerview-analysis-1.md
+      - RecyclerView源码分析2: android/recyclerview/recyclerview-analysis-2.md
+      - RecyclerView缓存分析: android/recyclerview/recyclerview-cache-analysis.md
     - AOSP:
       - ArrayMap: android/aosp/arraymap.md
       - Activity启动流程: android/aosp/start-activity.md
+      - Zygote进程启动流程: android/aosp/zygote.md
     - 三方源码:
-      - ARouter源码分析: android/三方源码/ARouter.md
-      - disklrucache: android/三方源码/disklrucache.md
-      - Glide缓存: android/三方源码/glide-cache.md
-      - Glide线程池: android/三方源码/glide-threadpool.md
-      - Glide请求过程分析: android/三方源码/glide-request.md
-      - Glide基本流程分析: android/三方源码/glide1.md
-      - Retrofit源码分析: android/三方源码/retrofit.md
       - LeakCanary: android/三方源码/leakcanary.md
       - Retrofit源码分析: android/三方源码/retrofit.md
+      - Glide基本流程分析: android/三方源码/glide1.md
+      - Glide请求过程分析: android/三方源码/glide-request.md
+      - Glide线程池: android/三方源码/glide-threadpool.md
+      - Glide缓存: android/三方源码/glide-cache.md
+      - disklrucache: android/三方源码/disklrucache.md
       - ARouter源码分析: android/三方源码/ARouter.md
     - 性能优化:
       - Matrix源码分析: android/性能优化/matrix.md
@@ -33,5 +32,5 @@
       - ViewModel: android/jetpack/viewmodel.md
       - Navigation使用: android/jetpack/navigation.md
     - 逆向:
-      - smali: android/逆向/smali.md
       - Frida: android/逆向/frida.md
+      - smali: android/逆向/smali.md

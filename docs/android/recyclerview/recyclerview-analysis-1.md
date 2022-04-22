@@ -5,7 +5,7 @@
 
 `RecyclerView`内部定义了如下几个内部类。
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/41b1ea9e-4147-4ad4-b0ef-b747faea32e3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220422%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220422T083912Z&X-Amz-Expires=3600&X-Amz-Signature=d403b6da55854f5dc2e001a6bd799ba13aea76100d712db5a0d0f5c4a992736f&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/41b1ea9e-4147-4ad4-b0ef-b747faea32e3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220422%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220422T090454Z&X-Amz-Expires=3600&X-Amz-Signature=d295f17253368371f77eb2a82e5478cdea3f1268175e92e9f30f547da39dd41c&X-Amz-SignedHeaders=host&x-id=GetObject)
 我们接下来将逐个分析每个内部类的主要功能，和一些常用的方法。后面再把各个部分串起来看他们是如何工作的。
 
 

@@ -1,24 +1,24 @@
   - leetcode:
     - 排序:
-      - 插入排序: leetcode/排序/insertion-sort.md
       - 冒泡排序: leetcode/排序/bubble-sort.md
+      - 插入排序: leetcode/排序/insertion-sort.md
     - 数组:
-      - 830. 较大分组的位置: leetcode/数组/830.positions-of-large-groups.md
-      - 448.找到所有数组中消失的数字: leetcode/数组/448.find-all-numbers-disappeared-in-an-array.md
-      - 349. 两个数组的交集: leetcode/数组/349.intersection-of-two-arrays.md
-      - 283.移动零: leetcode/数组/283.move-zeroes.md
-      - 169.多数元素: leetcode/数组/169.majority-element.md
-      - 119.杨辉三角 II: leetcode/数组/119.pascals-triangle-ii.md
-      - 118.杨辉三角: leetcode/数组/118.pascals-triangle.md
-      - 88.合并两个有序数组: leetcode/数组/88.merge-sorted-array.md
-      - 66.加一: leetcode/数组/66.plus-one.md
-      - 48.旋转图像: leetcode/数组/48.rotate-image.md
-      - 31.下一个排列: leetcode/数组/31.next-permutation.md
-      - 29. 顺时针打印矩阵: leetcode/数组/29.shun-shi-zhen-da-yin-ju-zhen-lcof.md
-      - 27.移除元素: leetcode/数组/27.remove-element.md
-      - 26.删除排序数组中的重复项: leetcode/数组/26.remove-duplicates-from-sorted-array.md
-      - 21.调整数组顺序使奇数位于偶数前面: leetcode/数组/21.tiao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof.md
-      - 15. 三数之和: leetcode/数组/15.3sum.md
-      - 11.盛最多水的容器: leetcode/数组/11.container-with-most-water.md
-      - 剑指 Offer 03.数组中重复的数字: leetcode/数组/3.shu-zu-zhong-zhong-fu-de-shu-zi-lcof.md
       - 1.两数之和: leetcode/数组/1.two-sum.md
+      - 剑指 Offer 03.数组中重复的数字: leetcode/数组/3.shu-zu-zhong-zhong-fu-de-shu-zi-lcof.md
+      - 11.盛最多水的容器: leetcode/数组/11.container-with-most-water.md
+      - 15. 三数之和: leetcode/数组/15.3sum.md
+      - 21.调整数组顺序使奇数位于偶数前面: leetcode/数组/21.tiao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof.md
+      - 26.删除排序数组中的重复项: leetcode/数组/26.remove-duplicates-from-sorted-array.md
+      - 27.移除元素: leetcode/数组/27.remove-element.md
+      - 29. 顺时针打印矩阵: leetcode/数组/29.shun-shi-zhen-da-yin-ju-zhen-lcof.md
+      - 31.下一个排列: leetcode/数组/31.next-permutation.md
+      - 48.旋转图像: leetcode/数组/48.rotate-image.md
+      - 66.加一: leetcode/数组/66.plus-one.md
+      - 88.合并两个有序数组: leetcode/数组/88.merge-sorted-array.md
+      - 118.杨辉三角: leetcode/数组/118.pascals-triangle.md
+      - 119.杨辉三角 II: leetcode/数组/119.pascals-triangle-ii.md
+      - 169.多数元素: leetcode/数组/169.majority-element.md
+      - 283.移动零: leetcode/数组/283.move-zeroes.md
+      - 349. 两个数组的交集: leetcode/数组/349.intersection-of-two-arrays.md
+      - 448.找到所有数组中消失的数字: leetcode/数组/448.find-all-numbers-disappeared-in-an-array.md
+      - 830. 较大分组的位置: leetcode/数组/830.positions-of-large-groups.md
