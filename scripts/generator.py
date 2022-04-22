@@ -25,6 +25,7 @@ def retrieve_block_children(id):
 def retrieve_a_database(id):
     r = requests.get("https://api.notion.com/v1/databases/" +
                      id, headers=headers)
+    print(r.text)
     json = r.json()
     title = json.get("title")[0].get("text").get("content")
     title = title.lower()
@@ -57,7 +58,8 @@ def query_a_database(id, dir, tag):
     )
     results = r.json().get("results")
     if(results is not None):
-        for result in r.json().get("results"):
+        results.reverse()
+        for result in results:
             id = result.get("id")
             properties = result.get("properties")
             title = properties.get("Title").get(
