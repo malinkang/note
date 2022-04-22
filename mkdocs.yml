@@ -105,20 +105,34 @@ nav:
       - BroadcastReceiver: android/四大组件/broadcastreceiver.md
       - Service: android/四大组件/service.md
       - Activity: android/四大组件/activity.md
+    - View:
+      - 自定义View: android/view/custom-view.md
+      - View事件分发: android/view/dispatch-touch-event.md
+      - View: android/view/view.md
+    - 数据存储:
+      - SharedPreference: android/数据存储/sharedpreference.md
+    - RecyclerView:
+      - RecyclerView缓存分析: android/recyclerview/recyclerview-cache-analysis.md
+      - RecyclerView源码分析2: android/recyclerview/recyclerview-analysis-2.md
+      - RecyclerView源码分析1: android/recyclerview/recyclerview-analysis-1.md
     - AOSP:
       - Activity启动流程: android/aosp/start-activity.md
       - ArrayMap: android/aosp/arraymap.md
     - 三方源码:
       - ARouter源码分析: android/三方源码/ARouter.md
+      - disklrucache: android/三方源码/disklrucache.md
+      - Glide缓存: android/三方源码/glide-cache.md
+      - Glide线程池: android/三方源码/glide-threadpool.md
+      - Glide请求过程分析: android/三方源码/glide-request.md
+      - Glide基本流程分析: android/三方源码/glide1.md
       - Retrofit源码分析: android/三方源码/retrofit.md
       - LeakCanary: android/三方源码/leakcanary.md
     - 性能优化:
       - Matrix源码分析: android/性能优化/matrix.md
-    - 数据存储:
-      - SharedPreference: android/数据存储/sharedpreference.md
     - Jetpack:
       - Navigation使用: android/jetpack/navigation.md
       - ViewModel: android/jetpack/viewmodel.md
+    - 逆向:
   - java:
     - Effective Java:
       - 2013-03-16-serialization: java/effective java/serialization.md
@@ -130,8 +144,8 @@ nav:
       - 2013-02-02-enums-and-annotations: java/effective java/enums-and-annotations.md
       - 2013-01-26-generics: java/effective java/generics.md
       - 2013-01-19-classes-and-interfaces: java/effective java/classes-and-interfaces.md
-      - 2013-01-12-methods-common-to-all-objects: java/effective java/methods-common-to-all-objects.md
-      - 2013-01-05-creating-and-destroying-objects: java/effective java/creating-and-destroying-objects.md
+      - 第3章对于所有对象都通用的方法: java/effective java/methods-common-to-all-objects.md
+      - 第2章创建和销毁对象: java/effective java/creating-and-destroying-objects.md
   - leetcode:
     - 排序:
       - 插入排序: leetcode/排序/insertion-sort.md
