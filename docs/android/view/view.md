@@ -873,7 +873,7 @@ public void setWillNotDraw(boolean willNotDraw) {
 
 ## requestLayout
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ff95d737-d950-460f-b5e6-ccd32f354097/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220422%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220422T083035Z&X-Amz-Expires=3600&X-Amz-Signature=370546af2ec218aeb6cf8bccd85b80a3f803313a61dbdfb6480e851641e0d4d7&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ff95d737-d950-460f-b5e6-ccd32f354097/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220422%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220422T083910Z&X-Amz-Expires=3600&X-Amz-Signature=2d43300f12819c0439a86972e3daea960a59bd6de391d85596fcb8cc77a79ba6&X-Amz-SignedHeaders=host&x-id=GetObject)
 ```java
 //frameworks/base/core/java/android/view/ViewRootImpl.java
 public void requestLayout() {

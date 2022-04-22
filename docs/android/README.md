@@ -31,3 +31,5 @@
       - Navigation使用: android/jetpack/navigation.md
       - ViewModel: android/jetpack/viewmodel.md
     - 逆向:
+      - smali: android/逆向/smali.md
+      - Frida: android/逆向/frida.md
